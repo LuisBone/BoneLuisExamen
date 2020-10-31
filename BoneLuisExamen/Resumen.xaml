@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoneLuisExamen.Resumen">
+    <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          HorizontalOptions="CenterAndExpand"
+          >
+            <Label
+                x:Name="lblTitulo"
+               FontSize="18"
+               TextColor="White"
+               VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Label Grid.Row="0" Grid.Column="0" Text="RESUMEN" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title" ></Label>
+
+
+        <StackLayout Grid.Row="1" Grid.Column="0" Padding="30,0">
+            <Label  Text="Nombre Estudiante: " HorizontalTextAlignment="Center" FontSize="Large"/>
+            <Entry x:Name="txtNombreEstudiante" HorizontalTextAlignment="Center" FontSize="Large" IsReadOnly="True"></Entry>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Grid.Column="0" Padding="30,10">
+            <Label  Text="Total a pagar: " HorizontalTextAlignment="Center" FontSize="Large"/>
+            <Entry x:Name="txtTotal" HorizontalTextAlignment="Center" FontSize="Large" IsReadOnly="True" ></Entry>
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>
