@@ -19,19 +19,21 @@ namespace BoneLuisExamen
         public Registro(String user)
         {
             InitializeComponent();
-            lblTitulo.Text = "conectado: " + user;
+            //Pasar datos al panel de navegación
+            lblUsuer.Text = "conectado: " + user;
             this.usuario = user;
         }
 
         private void btnCalcular_Clicked(object sender, EventArgs e)
         {
-                
+             
             double cuotaInicial = Convert.ToDouble(txtMonto.Text);
             if (cuotaInicial >= 1801)
             {
                 DisplayAlert("Error", "Cuota supera monto total", "ok");
                 return;
             }
+            //Calcular mensual a pagar
             double cuotaMes = ((this.costoAprox - cuotaInicial)/3)*1.05;
             this.cuotaTotal = cuotaMes*3;
             txtPago.Text = cuotaMes.ToString();

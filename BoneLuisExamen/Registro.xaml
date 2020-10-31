@@ -9,7 +9,7 @@
           HorizontalOptions="CenterAndExpand"
           >
             <Label
-                x:Name="lblTitulo"
+                x:Name="lblUsuer"
                FontSize="18"
                TextColor="White"
                VerticalTextAlignment="Center" />
@@ -50,8 +50,8 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
             <StackLayout Grid.Row="0" Grid.Column="0" Padding="30,10">
-                <Label  Text="Pago mensual: " HorizontalTextAlignment="Start" FontSize="Large"/>
-                <Entry x:Name="txtPago" HorizontalTextAlignment="Start" FontSize="Large" Keyboard="Numeric" IsReadOnly="True"></Entry>
+                <Label  Text="Pago mensual: " HorizontalTextAlignment="Center" FontSize="Large"/>
+                <Entry x:Name="txtPago" HorizontalTextAlignment="Center" FontSize="Large" Keyboard="Numeric" IsReadOnly="True"></Entry>
             </StackLayout>
             <StackLayout Grid.Row="0" Grid.Column="1" Padding="30,10">
                 <Button 
